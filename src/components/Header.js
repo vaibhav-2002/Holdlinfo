@@ -1,4 +1,4 @@
-import React, { useState, Component, useEffect } from "react";
+import React, { useState } from "react";
 import "./styles.css";
 import { CircularProgressbar } from "react-circular-progressbar";
 
@@ -25,6 +25,7 @@ export const Header = (props) => {
               <img
                 src="hodlinfo_logo.png"
                 class="fiat-logo"
+                alt="description of image"
                 style={{ padding: "10px" }}
               />
             </div>
