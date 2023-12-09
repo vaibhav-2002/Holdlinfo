@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Component } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
@@ -7,7 +7,7 @@ export const MainPage = () => {
   const [isLightTheme, setIsLightTheme] = useState(false);
   const [countDownTimer, setCountDownTimer] = useState(60);
   useEffect(() => {
-    if (countDownTimer == 0) setCountDownTimer(60);
+    if (countDownTimer === 0) setCountDownTimer(60);
     countDownTimer > 0 &&
       setTimeout(() => setCountDownTimer(countDownTimer - 1), 1000);
   }, [countDownTimer]);
@@ -112,12 +112,16 @@ export const MainPage = () => {
                   <h4 class="table-text">1</h4>
                 </td>
                 <td class="align-middle">
-                  <a target="_blank" href="">
-                    <h4 class="table-text">
-                      <img src="wazix.png" class="exchange-logo"></img>{" "}
-                      <span class="exchange-name ">WazirX</span>
-                    </h4>
-                  </a>
+                  {/* <a target="_blank" href="holdlinfo"> */}
+                  <h4 class="table-text">
+                    <img
+                      src="wazix.png"
+                      class="exchange-logo"
+                      alt="HodlInfo"
+                    ></img>{" "}
+                    <span class="exchange-name ">WazirX</span>
+                  </h4>
+                  {/* </a> */}
                 </td>
                 <td class="align-middle">
                   <h4 class="table-text">₹ 25,72,612</h4>
@@ -139,12 +143,16 @@ export const MainPage = () => {
                   <h4 class="table-text">2</h4>
                 </td>
                 <td class="align-middle">
-                  <a target="_blank" href="https://bit.ly/2BJxccc">
-                    <h4 class="table-text">
-                      <img src="bitbns.png" class="exchange-logo" />
-                      <span class="exchange-name ">Bitbns</span>
-                    </h4>
-                  </a>
+                  {/* <a target="_blank"> */}
+                  <h4 class="table-text">
+                    <img
+                      src="bitbns.png"
+                      class="exchange-logo"
+                      alt="HodlInfo"
+                    />
+                    <span class="exchange-name ">Bitbns</span>
+                  </h4>
+                  {/* </a> */}
                 </td>
                 <td class="align-middle">
                   <h4 class="table-text">₹ 28,83,906</h4>
@@ -168,7 +176,11 @@ export const MainPage = () => {
                 <td class="align-middle">
                   <a target="_blank" href=" ">
                     <h4 class="table-text">
-                      <img src="giotus.png" class="exchange-logo" />
+                      <img
+                        src="giotus.png"
+                        class="exchange-logo"
+                        alt="HodlInfo"
+                      />
                       <span class="exchange-name ">Colodax</span>
                     </h4>
                   </a>
@@ -220,12 +232,16 @@ export const MainPage = () => {
                   <h4 class="table-text">4</h4>
                 </td>
                 <td class="align-middle">
-                  <a target="_blank" href="">
-                    <h4 class="table-text">
-                      <img src="zebpay.png" class="exchange-logo" />
-                      <span class="exchange-name">Zebpay</span>
-                    </h4>
-                  </a>
+                  {/* <a target="_blank" href=""> */}
+                  <h4 class="table-text">
+                    <img
+                      src="zebpay.png"
+                      class="exchange-logo"
+                      alt="Holdlinfo"
+                    />
+                    <span class="exchange-name">Zebpay</span>
+                  </h4>
+                  {/* </a> */}
                 </td>
                 <td class="align-middle">
                   <h4 class="table-text">₹ 26,50,000</h4>

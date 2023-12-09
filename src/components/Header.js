@@ -25,7 +25,7 @@ export const Header = (props) => {
               <img
                 src="hodlinfo_logo.png"
                 class="fiat-logo"
-                alt="description of image"
+                alt="HodlInfo"
                 style={{ padding: "10px" }}
               />
             </div>
@@ -136,12 +136,12 @@ export const Header = (props) => {
           </div>
           <div class="btn-group">
             <a
-              target="_blank"
-              href=""
+              // target="_blank"
               type="button"
               aria-haspopup="true"
               aria-expanded="false"
               class="header-button btn btn-secondary"
+              href={`https://wazirx.com/exchange/${asset}-${currency}`}
             >
               BUY {asset}
             </a>
@@ -158,7 +158,11 @@ export const Header = (props) => {
             <a class="color-white" href="/connect/telegram">
               <div class="d-flex telegram-logo-text header-telegram-button btn align-items-center pointer color-white">
                 <div class="d-inline-block">
-                  <img src="telegram.png" class="telegram-logo" />
+                  <img
+                    src="telegram.png"
+                    class="telegram-logo"
+                    alt="HodlInfo"
+                  />
                 </div>
                 <div class="text-nowrap d-inline-block color-white">
                   Connect Telegram
